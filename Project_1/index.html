@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./loco.css">
     <link rel="stylesheet" href="style.css">
+
     <script src="./script.js" defer></script>
 </head>
 <body>
+
+    <div id="mini-circle"></div>
 
     <div class="main">
       
@@ -23,17 +27,29 @@
 
           <!-- Heading Section -->
             <div class="main-heading">
-                <h1>Product</h1>
+                <div id="bounding">
+                    <h1 class="bounding-elem">Product</h1>
+
+                </div>
+               
                 <div class="block-text">
-                    <h1 id="second-h1">Designer</h1>
-                    <h5>Base In toronto</h5>
+                    <div id="bounding">
+                        <h1 id="second-h1" class="bounding-elem" >Designer</h1>
+                    </div>
+                    <div id="bounding">
+                        <h5 class="bounding-elem">Base In toronto</h5>
+                    </div>
                 </div>
             </div>
 
             <!-- Chhoti Heading  -->
             <div class="heading-two">
-                <h5>avalable for freelance</h5>
-                <h5>work form home may 23'</h5>
+                <div id="bounding">
+                    <h5 class="bounding-elem">avalable for freelance</h5>
+                </div>
+                <div id="bounding">
+                    <h5 class="bounding-elem">Work for home</h5>
+                </div>
             </div>
 
             <!-- Hero Footer -->
@@ -106,6 +122,10 @@
 
 
     </div>
+
+
     
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>  
