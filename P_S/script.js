@@ -24,6 +24,10 @@ function circleChapta(){
 
 }
 
+// function firstPageAnim(){
+//     var tl = 
+// }
+
 function mousemove(x,y){
     window.addEventListener("mousemove", (dets) => {
         document.querySelector("#mini").style.transform = `translate(${dets.clientX}px, ${dets.clientY}px) scale(${x}, ${y})`;
