@@ -8,14 +8,241 @@
     padding: 0;
     box-sizing: border-box;
     font-family: ali_yt;
+    background: #000;
 }
 
 a{
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
+    transition: 3s;
+    /* position: relative; */
+    
+}
+#mini{
+    transition:all cubic-bezier(0.19, 1, 0.22, 1) .50s;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 9999;
+    background-color: #fff;
 }
 
 #main{
     width: 100%;
+    /* position: relative; */
+}
+
+.hero{
+width: 100%;
+height: 100vh;
+background-color: black;
+color: #fff;
+position: relative;
+
+}
+
+.nav{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 40px ;
+    /* z-index: 99; */
+    /* position:; */
+}
+.nav a{
+    font-size: 1.2vw;
+    text-transform: capitalize;
+}
+.nav h4{
+    font-weight: 300;
+}
+
+.main-heading{
+    margin-top: 90px;
+}
+.main-heading h1{
+    text-transform: uppercase;
+    font-size: 9vw;
+    font-weight: 900;
+    margin-left: 35px;
+    opacity: .5;
+    line-height: 1;
+}
+.block-text{
+    width: fit-content;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+.block-text h5{
+    text-align: right;
+    opacity: .9;
+    font-weight: 300;
+}
+
+#second-h1{
+    margin-left: 230px;
+}
+
+.heading-two{
+    margin-top: 100px;
+
+}
+.heading-two h5{
+    text-align: end;
+    padding-right: 40px;
+    font-size: .9vw;
+    font-weight: 200;
+}
+
+.hero-footer{
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    bottom: 1.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+}
+.arrow .circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: grey;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow{
+    display: flex;
+    gap: 10px;
+}
+
+
+.second-land{
+    padding-top: 120px;
+    padding-right: 10vw;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: #fff;
+}
+
+.elem{
+    position: relative;
+    border-top: 1px solid gray;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+    align-items: center;
+
+}
+.elem h1{
+    text-transform: uppercase;
+    font-size: 6.5vw;
+    opacity: .6;
+}
+.last-elem{
+    border-bottom: 1px solid gray;
+}
+
+.elem img{
+    height: 200px;
+    z-index: 999;
+    position: absolute;
+    opacity: 0;
+
+}
+
+.about{
+    padding: 12vw 12vw;
+    padding-left: 40vw;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.about img{
+    width: 230px;
+
+}
+.about p{
+    width: 25rem;
+    line-height: 1.7;
+    font-weight: 300;
+    /* font-size: 1.3vw; */
+    margin-top: 30px;
+
+
+}
+.about h5{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 200;
+    opacity: .6;
+    margin-bottom: 10px;
+}
+
+.about a{
+    /* margin-top: 89px; */
+    padding: 8px 13px;
+    border-radius: 100px;
+    border: 1px solid grey;
+    /* font-size: .9vw; */
+    text-transform: capitalize;
+    font-weight: 200;
+}
+.let-t{
+    margin-top: 20px;
+}
+.suscribe{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
+    padding-left: 4vw;
+    /* width: 10%; */
+    background-color: black;
+    color: #fff;
+}
+.suscribe a{
+    width: fit-content;
+
+}
+.suscribe .one{
+    margin-bottom: 8px;
+    font-size: .9vw;
+    font-weight: 100;
+    opacity: .6;
+}
+
+.footer{
+    padding-top: 7vw;
+    padding-bottom: 3vw;
+    padding-left: 4vw;
+    padding-right: 3vw;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer .social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
