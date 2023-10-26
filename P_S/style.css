@@ -1,0 +1,21 @@
+@font-face {
+    font-family: ali_yt;
+    src: url(./GeneralSans-Medium.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ali_yt;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#main{
+    width: 100%;
+}
