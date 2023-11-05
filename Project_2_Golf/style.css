@@ -1,0 +1,362 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,800;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    /* background: #000; */
+}
+
+.cursor{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(202, 251, 6);
+    z-index: 999;
+    position: fixed;
+    display: none;
+}
+.cursor-blur{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color:#ccff009f;
+    position: fixed;
+    filter: blur(120px);
+    display: none;
+    z-index: 9;
+
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Nav section */
+
+#nav{
+    width: 100%;
+    height: 120px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 100px;
+    gap: 45px;
+    color: white;
+    position: fixed;
+    z-index: 99;
+
+}
+
+#nav h4{
+    text-transform: uppercase;
+    transition: all 1s;
+
+}
+#nav h4:hover{
+    color: #000;
+}
+
+#nav img{
+    height: 4.5vw;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+/* Main Sction  */
+
+#main {
+    position: relative;
+    background-color: rgba(0, 0, 0, .47);
+  }
+
+
+
+  /* Page__1 */
+
+.page-1{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+
+}
+.page-1 h1{
+    color: #ffffff;
+    font-size: 115px;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: relative;
+    /* font-family: Verdana; */
+}
+
+.page-1 h1::before{
+    content: 'EAT. DRINK. PLAY.';
+    position: absolute;
+    color: #0b0909;
+    top: -2px;
+    left: -2px;
+    -webkit-text-stroke: 1px #cbfa10;
+    z-index: -1;
+}
+
+
+
+.page-1 h2{
+    font-size: 30px;    
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.page-1 p{
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Page-2 */
+
+.page-2{
+   min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+
+
+}
+
+
+.scroller{
+    /* background-color: red; */
+    white-space: nowrap;
+    margin-top: 50px;
+    padding: 0 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+.scroller::-webkit-scrollbar{
+    display: none;
+}
+.scroller-in-1{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+
+.scroller h4{
+    display: inline-block;
+    font-size: 140px;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: all linear 0.5s;
+    font-family: Verdana;
+    color: black;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+.scroller h4:hover{
+    color: #cbfa10;
+    -webkit-text-stroke: 1px rgb(19, 15, 15);
+}
+
+@keyframes scroll {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+
+.about-us{
+    position: relative;
+    margin-top: 18vh;
+    padding: 0 20px;
+    width: 100%;
+    height: 50vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 10;
+}
+.about-us img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px;
+    z-index: 10;
+    
+}
+.about-text{
+    width: 50%;
+    text-align: center;
+    z-index: 10;
+}
+.about-text p{
+    margin-bottom: 10px;
+    z-index: 10;
+    line-height: 1.5;
+    font-size: 20px;
+}
+.about-text h3{
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+
+.card-container{
+    margin-top: 20px;
+    height: 70vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    position: relative;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.card{
+    width: 23%;
+    height: 90%;
+    /* background-color: #c92323; */
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    transition:all ease .9s;
+}
+#card-1{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+#card-2{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+#card-3{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+
+.overlay{
+    
+    text-transform: uppercase;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #cbfa10;
+    color: #000;
+    text-align: center;
+    /* display: none; */
+    transition:all ease .9s;
+    opacity: 0;
+}
+.overlay h3{
+    color: #000;
+    font-size: 30px;
+    padding: 2vh 3vh;
+    padding-top: 3vh;
+    font-weight: 600;
+
+}
+.overlay p{
+    color: #000;
+    text-align: start;
+    line-height: 2;
+    padding-left: 2vh;
+    
+}
+.overlay:hover{
+    opacity: 1;
+}
+
+.card:hover{
+    transform: rotate3d(1,1,0,20deg);
+}
+
+
+.page-3{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.green-box{
+    z-index: 10;
+    margin-top: 40px;
+    width: 100%;
+    height: 34vh;
+    background:linear-gradient(to top left, #6fc900,rgb(158, 244, 19));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.green-box img{
+    height: 100%;
+    object-fit: cover;
+    width: 10%;
+}
+.green-box h4{
+    width: 50%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+}
+.text-container{
+    position: relative;
+    z-index: 10;
+    margin-top: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.text-container>p{
+    font-size: 30px;
+    width: 40%;
+    text-align: center;
+}
+.text-container img{
+    height: 50px;
+    position: absolute;
+    
+}
+.text-container #colon1{
+    left: 25%;
+    top: 10%;
+}
+.text-container #colon2{
+    right: 30%;
+    top: 90%;
+}
+
