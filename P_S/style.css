@@ -276,10 +276,11 @@ video{
 }
 
 .something{
+    margin-top: 20px;
     position: relative;
     width: 100%;
     height: 30vh;
-    background:linear-gradient(to top left, #7ece05,green);
+    background:linear-gradient(to left bottom, #7ece05,rgb(73, 212, 35));
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -298,4 +299,79 @@ video{
     font-size: 20px;
     font-weight: 700;
     z-index: 10;
+}
+.page-3{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+.page-3>p{
+    font-size: 30px;
+    font-weight: 700;
+    width: 40%;
+    text-align: center;
+    line-height: 40px;
+}
+.page-3 img{
+    position: absolute;
+    height: 50px;
+}
+
+#colon1{
+    top: 22%;
+    left: 23%;
+}
+#colon2{
+    bottom: 22%;
+    right: 30%;
+}
+
+.page-4{
+    width: 100%;
+    height: 60vh;
+    /* background-color: red; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 13;
+}
+.elem h2{
+    color:#000;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 12;
+    background-color: #7ece05;
+}
+.elem h2:hover{
+    color: #fff;
+    background-color: transparent;
+}
+
+.elem{
+    width: 26%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+
+}
+.elem img{
+    width: 100%;
+
+    z-index: 10;
+    height: 100%;
+    object-fit: cover;
 }
