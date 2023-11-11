@@ -36,20 +36,21 @@ tl.from('.bounding-elem',{
   opacity:0,
   duration: .7,
   y:100,
-  stagger:.3,
+  stagger:.2,
 });
 
 tl.from('.bounding-elem-2',{
   opacity:0,
   // duration:.9,
   y:-100,
-  stagger:.3,
+  stagger:.2,
   // delay:1,
 })
 tl.from('.hero-footer',{
   opacity:0,
-  // duration:.1,
-  delay:.1,
+  duration:2,
+
+  delay:-1,
 })
 
 loco();
