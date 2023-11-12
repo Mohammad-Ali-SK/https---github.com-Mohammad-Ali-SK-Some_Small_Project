@@ -27,13 +27,14 @@ html,body{
 }
 .circle{
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: #fff;
     position: absolute;
     z-index: 9999;
     mix-blend-mode: difference;
+    display: none;
 }
 
 .hero{
@@ -157,16 +158,17 @@ html,body{
     font-family: ali_98;
     line-height: 1;
     opacity:.6;
+    transition: ease Power3;
 }
 #elemlast{
     border-bottom: 1px solid gray;
 }
 
 
-.elem img{
+#imgage{
     height: 140%;
-    /* opacity: 0; */
-    display: none;
+    opacity: 0;
+    /* display: none; */
     position: absolute;
     z-index: 99;
 }
