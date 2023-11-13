@@ -178,6 +178,7 @@ video{
     align-items: center;
     padding: 0 40px;
     z-index: 10;
+    position: relative;
 }
 .about-us img{
     width: 220px;
@@ -185,6 +186,7 @@ video{
     height: 200px;
     border-radius: 20px;
     z-index: 10;
+    /* position: relative; */
 
 }
 .about-text{
@@ -253,7 +255,7 @@ video{
     height: 100%;
     background-color: #7ece05;
     opacity: 0;
-    transition: all .5s ;
+    transition: all ease .5s ;
 }
 .card-text h3{
     color: #000;
@@ -376,3 +378,4 @@ video{
     height: 100%;
     object-fit: cover;
 }
+
