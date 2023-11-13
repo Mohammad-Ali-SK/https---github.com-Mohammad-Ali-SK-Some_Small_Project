@@ -27,7 +27,7 @@
     background-color: #92f202c5;
     filter: blur(70px);
     position: fixed;
-    border-radius: 50%;
+    border-radius: 20%;
     z-index: 9;
 }
 html, body{
@@ -115,6 +115,7 @@ video{
     font-weight: 400;
     text-align: center;
 }
+
 
 .page-2{
     padding-top: 50px;
