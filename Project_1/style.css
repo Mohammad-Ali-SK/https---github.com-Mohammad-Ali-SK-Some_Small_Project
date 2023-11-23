@@ -40,7 +40,7 @@ a{
 }
 
 #bounding{
-    width: fit-content;
+    /* width:fit-content; */
     /* background-color: red; */
     overflow: hidden;
 }
@@ -105,7 +105,7 @@ a{
 .block-text{
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    /* width: fit-content; */
     align-items: end;
     /* background-color: red; */
 }
